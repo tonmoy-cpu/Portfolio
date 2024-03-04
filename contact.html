@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Me</title>
+</head>
+<body>
+    <div class="container">
+      <form onsubmit="sendEmail(); reset(); return false;">
+        <h3>Contact Me</h3>
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="text" id="email" placeholder="Email Id" required>
+    <input type="text" id="phone" placeholder="Phone No." required>
+    <textarea id="message" rows="4" placeholder="Write here"></textarea>
+    <button type="submit">Send</button>
+      </form>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script>
+        function sendEmail() {
+            Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "Tomboyhex0214@gmail.com",
+    Password : "E6C2A9696791D556DF736A0C5811634C50A2",
+    To : 'Tomboyhex0214@gmail.com',
+    From : "you@isp.com",
+    Subject : "New message from query",
+    Body : "Name:"+getElementById("name").value+
+                        "<br>Email:"+getElementById("email").value+
+                        "<br>Phone No:"+getElementById("phone").value+
+                        "<br>Message:"+getElementById("message").value
+}).then(
+  message => alert("Successfully send")
+);
+        }
+    </script>
+</body>
+</html>

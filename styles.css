@@ -1,0 +1,462 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body {
+    background-color: #1F2544;
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+}
+nav {
+background: rgba(211, 213, 255, 0.05);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4.2px);
+-webkit-backdrop-filter: blur(4.2px);
+display: flex;
+align-items: center;
+justify-content: space-around;
+height: 60px;
+}
+nav ul {
+display: flex;
+justify-content: center;
+}
+nav ul li {
+margin: 10px;
+list-style: none;
+}
+
+nav ul li a {
+text-decoration: none;
+color: rgb(255, 255, 255);
+}
+nav ul li :hover {
+color: #777777;
+font-size: 16.6px;
+}
+.left {
+font-size: 20px;
+font-weight: bold;
+}
+@media (max-width: 1200px) {
+    nav ul li {
+        font-size: 20px;
+    }
+}
+.content {
+display: flex;
+justify-content: space-around;
+margin: 70px 0;
+background-image: url('images/White\ dot.png');
+}
+
+.content >div {
+width: 30%;
+}
+.leftContent {
+font-size: 35px;
+margin-top: 70px;
+}
+.leftContent .btn {
+padding: 12px;
+background-color: #1F2544;
+border: 2px solid white ;
+color: white;
+font-size: 15px;
+margin-top: 50px;
+border-radius: 3px;
+margin-left: 7px;
+}
+.btn a {
+text-decoration: none;
+color: white;
+}
+@media (max-width: 1080) {
+    .leftContent .btn {
+        font-size: 10px;
+        padding: 5px;
+        margin-top: 25px;
+    }
+}
+.buttons :hover {
+background-color: white;
+color: black;
+}
+.name {
+color: #81689D;
+}
+.rightContent img {
+width: 100%;
+height: auto;
+}
+@media (max-width: 1080){
+    .rightContent{
+        margin-top: 15px;
+    }
+}
+#element {
+color: #ffa2da;
+}
+hr {
+border-style: none;
+position: relative;
+background-color: #FFD0EC;
+height: 0.02rem;
+opacity: 20%;
+margin-top: 120px;
+max-width: 90%;
+left: 70px;
+}
+@media (max-width: 500px){
+    hr{
+        left:10px;
+    }
+}
+.projects-first {
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.projects-second {
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.projects-third {
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.projects button {
+height: 240px;
+width: 350px;
+margin: 10px;
+border-radius: 5%;
+}
+@media (max-width: 1200px) {
+    .projects button {
+        height: 240px;
+        width: 330px;
+        margin: 4px;
+    }
+}
+.projectSection {
+margin: 40px;
+}
+.projectSection h2 {
+margin: 30px;
+margin-left: 115px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #DA0463;
+color: #ddd;
+border-radius: 5%;
+width: 11%;
+}
+@media (max-width: 1200px) {
+   .projectSection h2 {
+        scale: 100%;
+        margin-left: 1px;
+        width: 20%;
+    }
+}
+.project-1 {
+background: url("images/Calculator.PNG");
+background-size: 390px 250px;
+font-family: 'Arvo', serif;
+font-size: 1px;
+cursor: pointer;
+}
+.project-2 {
+background: url('images/Drum Kit.PNG');
+background-size: 390px 240px;
+font-family: 'Arvo', serif;
+font-size: 1px;
+cursor: pointer;
+}
+.project-3 {
+background: url('images/Dice\ Game.PNG');
+background-size:  390px 240px;
+font-family: 'Arvo', serif;
+font-size: 1px;
+cursor: pointer;
+}
+.project-4 {
+background: url('images/Tindog.PNG');
+background-size:  450px 240px;
+font-family: 'Arvo', serif;
+font-size: 1px;
+}
+.project-5 {
+background: url('images/TodoList.PNG');
+background-size:  450px 240px;
+margin-right: 100px;
+font-family: 'Arvo', serif;
+font-size: 1px;
+cursor: pointer;
+}
+.project-6 {
+background: url('images/blogging\ website.PNG');
+background-size:  390px 240px;
+font-family: 'Arvo', serif;
+font-size: 1px;
+cursor: pointer;
+}
+.project-7 {
+background: url('images/NewsLetter_signin.PNG');
+background-size:  390px 240px;
+font-family: 'Arvo', serif;
+font-size: 1px;
+cursor: pointer;
+}
+.project-8 {
+background: url('images/Expense-tracker.PNG');
+background-size:  390px 240px;
+font-family: 'Arvo', serif;
+font-size: 1px;
+cursor: pointer;
+}
+.project-9 {
+background: url('images/Weather-app.PNG');
+background-size:  390px 240px;
+font-family: 'Arvo', serif;
+font-size: 1px;
+cursor: pointer;
+}
+@media (max-width: 500px){
+    .project-1{
+        background-size: 120px 80px;
+    }
+    .project-2{
+        background-size: 120px 80px;
+    }
+    .project-3{
+        background-size: 120px 80px;
+    }
+    .project-4{
+        background-size: 120px 80px;
+    }
+    .project-5{
+        background-size: 120px 80px;
+    }
+    .project-6{
+        background-size: 120px 80px;
+    }
+}
+.projects a :hover {
+background-image: url('images/white.PNG');
+box-shadow: 0 0 10px rgb(255, 255, 255);
+font-size: 15px;
+color: #474F7A;
+text-shadow: 0.7px 0px #DA0463;
+font-weight: 900;
+}
+.container {
+   background-color: #ddd;
+   width: 100%;
+   border-radius: 2em;
+}
+.container :hover {
+/* background-color: yellow; */
+font-size: 13px;
+/* color: rgb(65, 65, 65); */
+box-shadow: 0 0 10px rgb(249, 245, 172);
+}
+.skills {
+text-align: right;
+padding-top: 1px;
+padding-bottom: 1px; 
+padding-right: 4px;
+color: white;
+border-radius: 2em;
+}
+
+
+.Video_editing {width: 70%; background-color: #04AA6D; font-size: 10px;}
+.html {width: 60%; background-color: #2196F3; font-size: 10px;}
+.css {width: 50%; background-color: #f44336; font-size: 10px;}
+.js {width: 40%; background-color: #808080; font-size: 10px;}
+.figma {width: 40%; background-color: #ff61c3; font-size: 10px;}
+.c {width: 60%; background-color: #ffd500; font-size: 10px;}
+.photoshop {width: 80%; background-color: #72a9fb; font-size: 10px;}
+.mongodb {width: 70%; background-color: #45913f; font-size: 10px;}
+.skillSection {
+width: 80%;
+position: relative;
+margin-left: 150px;
+}
+.skillSection h2 {
+margin: 50px 50px 50px 0;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #DA0463;
+color: #ddd;
+border-radius: 5%;
+width: 10%;
+}
+@media (max-width: 1200px) {
+    .skillSection h2 {
+        scale: 100%;
+        width: 15%;
+        margin: 20px 20px 20px 0;
+    }
+}
+.skillSection p{
+margin-top: 10px;
+/* margin-bottom: 10px; */
+}
+@media (max-width:1200px){
+    .skillSection p {
+        margin-top: 10px;
+        font-size: 17px;
+    }
+}
+.glitch-wrapper {
+width: 100%;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+.glitch {
+position: relative;
+line-height: 1.2;
+color: #fff;
+letter-spacing: 5px;
+z-index: 1;
+font-size: 40px;
+}
+@media (max-width: 500px) {
+    .glitch{
+        font-size: 10px;
+    }
+}
+
+.glitch:before,
+.glitch:after {
+display: block;
+content: attr(data-glitch);
+position: absolute;
+top: 0;
+left: 0;
+opacity: 0.8;
+}
+
+.glitch:before {
+animation: glitch-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+color: #0ff;
+z-index: -1;
+}
+
+.glitch:after {
+animation: glitch-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+color: #ff00ff;
+z-index: -2;
+}
+
+@keyframes glitch-color {
+0% {
+transform: translate(0);
+}
+
+20% {
+transform: translate(-3px, 3px);
+}
+
+40% {
+transform: translate(-3px, -3px);
+}
+
+60% {
+transform: translate(3px, 3px);
+}
+
+80% {
+transform: translate(3px, -3px);
+}
+
+to {
+transform: translate(0);
+}
+}
+.skillSection {
+/* From https://css.glass */
+background: rgba(160, 199, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(160, 199, 255, 0.3);
+padding: 15px;
+margin-top: 10px;
+position: relative;
+width:70rem;
+right: 41px;
+}
+@media (max-width: 1200px) {
+    .skillSection{
+        width: 63rem;
+        right : 110px;
+        padding: 13px;
+        border-radius: 10px;
+    }
+}
+footer {
+background-color: rgb(1, 16, 47);
+padding: 50px;
+}
+.logos {
+display: flex;
+justify-content: center;
+}
+.logo {
+height: 30px;
+width: 30px;
+margin: 10px;
+border-radius: 50%;
+opacity: 0.9;
+}
+.link :hover {
+height: 33px;
+width: 33px;
+border-radius: 50%;
+opacity: 1;
+}
+footer p {
+margin-left: 42rem;
+margin-bottom: 1rem;
+}
+@media (max-width: 1200px) {
+    footer p{
+        margin-left: 28rem;
+    }
+}
+.container {
+    cursor:pointer;
+}
+.contactsec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer button {
+    padding: 12px;
+    border: 2px solid white ;
+    color: white;
+    font-size: 15px;
+    margin-top: 5px;
+    border-radius: 3px;
+    margin-left: 7px;
+    background-color: rgb(1, 16, 47);
+    cursor: pointer;
+}
+.contactsec :hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-size: 16px;
+}
